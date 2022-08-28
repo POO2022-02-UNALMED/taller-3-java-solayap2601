@@ -34,10 +34,10 @@ public class Control {
 		}
 	}
 	public void enlazar(TV tv) {
-		tele = tv;
+		this.tele = tv;
 		tv.setControl(this);
 	}
-	public TV getTV() {
+	public TV getTv() {
 		return tele;
 	}
 	public void setTV(TV tv) {
