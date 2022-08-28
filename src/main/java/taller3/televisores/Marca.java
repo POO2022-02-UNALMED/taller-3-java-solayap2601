@@ -5,10 +5,10 @@ public class Marca {
 	public Marca (String str) {
 		this.nombre = str; 
 	}
-	public String getMarca () {
+	public String getNombre () {
 		return this.nombre;
 	}
-	public void setMarca (String nom) {
+	public void setNombre (String nom) {
 		this.nombre = nom;
 	}
 }
