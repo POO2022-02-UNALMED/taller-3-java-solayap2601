@@ -29,7 +29,9 @@ public class Control {
 		}
 	}
 	public void setCanal(int cha) {
-		tele.setCanal(cha);
+		if((cha>0) && (cha<121) && (tele.getEstado()==true)) {
+			tele.setCanal(cha);
+		}
 	}
 	public void enlazar(TV tv) {
 		tele = tv;

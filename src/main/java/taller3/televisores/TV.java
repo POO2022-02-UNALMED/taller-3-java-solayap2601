@@ -35,13 +35,17 @@ public class TV {
 		return volumen;
 	}
 	public void setVolumen (int nom) {
-		volumen = nom;
+		if((nom>=0) && (nom<=7) && (estado==true)) {
+			volumen = nom;
+			}
 	}
 	public int getCanal () {
 		return canal;
 	}
 	public void setCanal (int nom) {
+		if((nom>0) && (nom<121) && (estado==true)) {
 		canal = nom;
+		}
 	}
 	public static void setNumTV(int nom) {
 		numTV = nom;
